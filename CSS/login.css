@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+:root {
+  --primary-color: #0077B6;
+  --secondary-background-color-onhover: #f0f0f0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+
+/* Navigation */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: white;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .search-container {
+    flex: 1;
+    max-width: 500px;
+    margin: 0 2rem;
+    position: relative;
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border-radius: 9999px;
+    border: 1px solid #e2e8f0;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+  
+  .search-input:focus {
+    border-color: #3b82f6;
+  }
+  
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  .nav-link {
+    color: #4b5563;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+  }
+  
+  .nav-link:hover {
+    color: #1f2937;
+  }
+  
+
+.login-container {
+  padding: 2em;
+  width: 350px;
+  margin: auto;
+  margin-top: 15vh;
+  display: flex;
+  flex-flow: column nowrap;
+  height: 450px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 33px 3px #eaeaea;
+}
+
+.login-container > h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.login-body {
+  flex-grow: 1;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+}
+
+.login-container .email-container,
+.login-container .password-container {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.login-container .email-container > label,
+.login-container .password-container > label {
+  margin-bottom: 5px;
+}
+
+.login-container .email-container input,
+.login-container .password-container .input-container {
+  padding: 5px 10px;
+  border-radius: 3px;
+  border: 1px solid #d2d2d2;
+}
+
+.login-container .input-container {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.login-container .hide-show-password-eye {
+  margin-right: 3px;
+  color: #7f7f7f;
+  cursor: pointer;
+}
+
+.remember-me-container {
+  display: flex;
+  flex-flow: column nowrap;
+  cursor: pointer;
+  font-size: 0.8rem;
+  color: #5f5f5f;
+}
+
+.remember-me-container input {
+  border-color: #bdbdbd;
+  margin-right: 7px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.remember-me-container p {
+  color: #b3b3b3;
+}
+
+.login-btn-container {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.login-container .login-btn-container button {
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: 600;
+  border: none;
+  color: var(--primary-color);
+}
+
+.login-container .login-btn-container button:hover {
+  background-color: var(--secondary-background-color-onhover);
+  cursor: pointer;
+}
+
+.login-container .login-btn-container input {
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: 600;
+  color: white;
+  border: none;
+  margin-bottom: 10px;
+  background-color: var(--primary-color);
+}
+
+.login-container .login-btn-container input:hover {
+  cursor: pointer;
+  background-color: #005279;
+}
+
+.login-body > a {
+  margin: 0 auto;
+  font-size: 0.8rem;
+  color: #909090;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.input-container input {
+  border: none;
+  flex-grow: 1;
+}
+
+.input-container input:focus {
+  outline: none;
+}
+
+@media (min-width: 868px) {
+  .login-container {
+    width: 400px;
+  }
+
+  .remember-me-container {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+}

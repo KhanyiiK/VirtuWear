@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop VirtuWear</title>
+    <link rel="stylesheet" href="/CSS/shop.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="#" class="logo">VirtuWear</a>
+        
+        <div class="search-container">
+            <input type="text" class="search-input" placeholder="Search">
+            <i data-lucide="search" style="position: absolute; right: 1rem; top: 50%; transform: translateY(-50%); color: #9ca3af;"></i>
+        </div>
+
+        <div class="nav-links">
+            <a href="/index.html" class="nav-link">Home</a>
+            <a href="/shop.html" class="nav-link">Shop</a>
+            <a href="/signup.html" class="nav-link">Signup</a>
+            <a href="/login.html" class="nav-link">Login</a>
+            <a href="/cart.html" class="nav-link">Cart</a>
+            <a href="/wishlist.html" class="nav-link">WishList</a>
+            <i data-lucide="heart" style="color: #4b5563; cursor: pointer;"></i>
+            <i data-lucide="shopping-cart" style="color: #4b5563; cursor: pointer;"></i>
+        </div>
+    </nav>
+
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="filters">
+                <div class="filter-header">
+                    <h2>Filters</h2>
+                    <button class="reset-btn" id="resetFilters">Reset</button>
+                </div>
+
+                <div class="filter-section">
+                    <h3>Price</h3>
+                    <div class="filter-option">
+                        <input type="checkbox" id="priceFilter1" name="priceFilter" value="below200">
+                        <label for="priceFilter1">Below R200</label>
+                    </div>
+                    <div class="filter-option">
+                        <input type="checkbox" id="priceFilter2" name="priceFilter" value="201-999">
+                        <label for="priceFilter2">R201 - R999</label>
+                    </div>
+                    <div class="filter-option">
+                        <input type="checkbox" id="priceFilter3" name="priceFilter" value="1000-1999">
+                        <label for="priceFilter3">R1000 - R1999</label>
+                    </div>
+                    <div class="filter-option">
+                        <input type="checkbox" id="priceFilter4" name="priceFilter" value="over2000">
+                        <label for="priceFilter4">Over R2000</label>
+                    </div>
+                </div>
+
+                <div class="filter-section">
+                    <h3>Ratings (min)</h3>
+                    <div id="rating-value">0 stars</div>
+                    <input type="range" min="0" max="5" step="0.5" value="0" class="rating-slider" id="ratingFilter">
+                </div>
+
+                <div class="filter-section">
+                    <h3>Categories</h3>
+                    <div class="filter-option">
+                        <input type="checkbox" id="categoryFilter1" name="categoryFilter" value="men">
+                        <label for="categoryFilter1">Men's wear</label>
+                    </div>
+                    <div class="filter-option">
+                        <input type="checkbox" id="categoryFilter2" name="categoryFilter" value="women">
+                        <label for="categoryFilter2">Women's wear</label>
+                    </div>
+                    <div class="filter-option">
+                        <input type="checkbox" id="categoryFilter3" name="categoryFilter" value="kid">
+                        <label for="categoryFilter3">Kid's wear</label>
+                    </div>
+                </div>
+            </div>
+
+            <div id="products-grid" class="products-grid" role="main">
+                <!-- Product cards will be dynamically generated here -->
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <!-- Footer content -->
+    </footer>
+
+    <script src="/JS/shop.js"></script>
+</body>
+</html>

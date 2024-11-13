@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home VirtuWear</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/lucide.min.js"></script>
+    <link rel="stylesheet" href="/CSS/wishlist.css">
+  </head>
+  <body>
+      <!-- Navigation -->
+      <nav class="navbar">
+          <a href="#" class="logo">VirtuWear</a>
+          
+          <div class="search-container">
+              <input type="text" class="search-input" placeholder="Search">
+              <i data-lucide="search" style="position: absolute; right: 1rem; top: 50%; transform: translateY(-50%); color: #9ca3af;"></i>
+          </div>
+  
+         
+        <div class="nav-links">
+          <a href="/index.html" class="nav-link">Home</a>
+          <a href="/shop.html" class="nav-link">Shop</a>
+          <a href="/signup.html" class="nav-link">Signup</a>
+          <a href="/login.html" class="nav-link">Login</a>
+          <a href="/cart.html" class="nav-link">Cart</a>
+          <a href="/wishlist.html" class="nav-link">WishList</a>
+          <i data-lucide="heart" style="color: #4b5563; cursor: pointer;"></i>
+          <i data-lucide="shopping-cart" style="color: #4b5563; cursor: pointer;"></i>
+          
+      </div>
+      </nav>
+
+      <body>
+        <header>
+          <div class="header-container">
+            <h1>Wishlist</h1>
+          </div>
+        </header>
+      
+        <main>
+          <div class="wishlist-products-container">
+            <div class="wishlist-card">
+              <div class="img-container">
+                <img src="elite-reactor.jpg" alt="Elite Reactor">
+              </div>
+              <div class="product-card-details">
+                <h3>ELITE REACTOR</h3>
+                <p class="ratings">4.9 <i class="fas fa-star"></i> (398 reviews)</p>
+                <div class="price-container">
+                  <p class="original-price">$1299</p>
+                  <p class="discount-price">$1199</p>
+                </div>
+                <p>Gender: kid</p>
+                <div class="info">
+                  <p class="out-of-stock">Out of stock</p>
+                </div>
+              </div>
+              <div class="wishlist-btn-container">
+                <button class="cart-wishlist-btn">Add to Cart</button>
+                <button class="remove-from-wishlist-btn">Remove from Wishlist</button>
+              </div>
+            </div>
+      
+            <!-- Add more wishlist product cards here -->
+          </div>
+        </main>
+      
+        <script src="/JS/wishlist.js"></script>
+      </body>
+      </html>

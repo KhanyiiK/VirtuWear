@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login VirtuWear</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/lucide.min.js"></script>
+    <link rel="stylesheet" href="/CSS/signup.css">
+  </head>
+  <body>
+      <!-- Navigation -->
+      <nav class="navbar">
+          <a href="#" class="logo">VirtuWear</a>
+          
+          <div class="search-container">
+              <input type="text" class="search-input" placeholder="Search">
+              <i data-lucide="search" style="position: absolute; right: 1rem; top: 50%; transform: translateY(-50%); color: #9ca3af;"></i>
+          </div>
+  
+         
+        <div class="nav-links">
+          <a href="/index.html" class="nav-link">Home</a>
+          <a href="/shop.html" class="nav-link">Shop</a>
+          <a href="/signup.html" class="nav-link">Signup</a>
+          <a href="/login.html" class="nav-link">Login</a>
+          <a href="/cart.html" class="nav-link">Cart</a>
+          <a href="/wishlist.html" class="nav-link">WishList</a>
+          <i data-lucide="heart" style="color: #4b5563; cursor: pointer;"></i>
+          <i data-lucide="shopping-cart" style="color: #4b5563; cursor: pointer;"></i>
+          
+      </div>
+      </nav>
+
+      <body>
+        <div class="signup-container">
+          <h2>Sign Up</h2>
+          <form class="signup-body">
+            <div class="email-container">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" placeholder="Enter Email" required>
+            </div>
+            <div class="password-container">
+              <label for="password">Password</label>
+              <div class="input-container">
+                <input type="password" id="password" placeholder="Enter Password" required>
+                <i class="hide-show-password-eye" onclick="togglePasswordVisibility('password')"></i>
+              </div>
+            </div>
+            <div class="password-container">
+              <label for="confirm-password">Confirm Password</label>
+              <div class="input-container">
+                <input type="password" id="confirm-password" placeholder="Enter Password Again" required>
+                <i class="hide-show-password-eye" onclick="togglePasswordVisibility('confirm-password')"></i>
+              </div>
+            </div>
+            <div class="name-container">
+              <div class="first-name-container">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" placeholder="Enter First Name" required>
+              </div>
+              <div class="last-name-container">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" placeholder="Enter Last Name" required>
+              </div>
+            </div>
+            <div class="terms-container">
+              <input type="checkbox" id="terms-conditions">
+              <label for="terms-conditions">I accept all terms and conditions</label>
+            </div>
+            <div class="signup-btn-container">
+              <button type="submit">Sign Up</button>
+            </div>
+            <div class="login-container">
+              <p>Already have an account?</p>
+              <a href="/login">Login</a>
+            </div>
+          </form>
+        </div>
+        <script src="script.js"></script>
+      </body>
+      </html>
