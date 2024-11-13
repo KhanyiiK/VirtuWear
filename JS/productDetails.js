@@ -15,9 +15,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Define video sources for each product
     const videoSources = {
-        1: "/demo-videos/yellow-sundress-demo.mp4",  // Yellow Sundress video
-        2: "/demo-videos/brown-coat-demo.mp4",       // Brown Trench Coat video
-        3: "/demo-videos/yellow-hoodie-demo.mp4"     // Yellow Hoodie video
+        1: "demo-videos/yellow-sundress-demo.mp4",  // Yellow Sundress video
+        2: "demo-videos/brown-coat-demo.mp4",       // Brown Trench Coat video
+        3: "demo-videos/yellow-hoodie-demo.mp4"     // Yellow Hoodie video
     };
 
     // Create modal container
